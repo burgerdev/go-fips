@@ -13,6 +13,8 @@ import (
 	"math/big"
 	"net/http"
 	"time"
+
+	_ "crypto/tls/fipsonly"
 )
 
 func generateSelfSignedCert() (tls.Certificate, error) {
